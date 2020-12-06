@@ -1,0 +1,384 @@
+
+@import "libs";
+@import "fonts";
+@import "global";
+
+// header
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+
+    &__wrapper{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.logo-header{
+    width: 165px;
+    height: 50px;
+}
+
+//  intro
+.intro {
+    background-color: #F9E047;
+
+    &__wrapper {
+        padding: 80px 0 162px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__text {
+        flex: 1 1 50%;
+       padding: 0 50px 50px 0;
+    }
+    
+    &__img {
+        flex: 1 1 50%;
+        margin-right: -3%;
+    }
+}
+
+.text-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__text {
+        font-size: 30px;
+        line-height: 183.2%;
+        margin-top: 15px;
+    }
+    &__link {
+        margin-top: 42px;
+        max-width: 250px;
+    }
+}
+
+// About Section
+.about {
+    padding: 204px 50px 218px;
+
+    &__text {
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+
+        span{
+            font-weight: 700;
+        }
+    }
+    &__items {
+        margin-top: 123px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.item-about {
+    &__img {
+        height: 130px;
+        width: auto;
+        display: flex;
+        align-items: center;
+    }
+    &__text {
+        margin: 30px auto 0 ;
+        text-align: center;
+        font-weight: 700;
+        max-width: 170px;
+    }
+}
+
+// Clients Section
+.clients {
+    background-color: #F6F6F6;
+    padding: 150px 0 181px;
+
+    &__list {
+        margin: 86px 35px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin: 15px;
+        background-color: #fff;
+        flex: 1 1 calc(25% - 30px);
+        height: 178px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+// Team section
+.team {
+    background-color:#F9E047;
+    padding: 169px 0 131px;
+
+    &__wrapper{
+        padding: 0 63px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__quote {
+        margin-top: 44px;
+
+        p{
+            font-size: 30px;
+            line-height: 37px;
+        }
+        p + p{
+            margin-top: 44px;
+        }
+        cite{
+            margin-top: 47px;
+            text-align: right;
+            display: block;
+            font-style: normal;
+        }
+    }
+}
+
+.person-team {
+
+    &__photo {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__name {
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+// Gallery Section
+.gallery {
+    &__items {
+        margin: -2px;
+    }
+    &__row {
+        display: flex;
+       
+
+        &.row-3 .gallery__item{
+            flex: 1 0 32%;
+        }
+        &.row-2 .gallery__item{
+            flex: 1 0 50%;
+        }
+        .img{
+            object-fit: cover;
+        }
+    }
+    &__item {
+        height: 326px;
+        margin: 2px;
+    }
+    
+    &__text {
+        padding: 130px 0 110px;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+    }
+}
+
+// Process Section
+
+
+// Join Section
+.join {
+    background: url('../img/join-bg.jpg') left no-repeat;
+    background-size: contain;
+
+    &__wrapper {
+       padding: 156px 50px 131px 115px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+    }
+    &__text{
+        max-width: 400px;
+
+        p{
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+    &__list {
+        margin-top: 27px;
+        padding-right: 20px;
+    }
+    
+    &__item +  &__item{
+        margin-top: 30px;
+    }
+}
+
+
+// Benefits Section
+.benefits {
+    background-color: #F6F6F6;
+    padding: 150px 0 200px;
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 35px 0 0 0;
+    }
+    &__item {
+        flex: 1 1 33%;
+        
+    }
+}
+
+.item-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 0;
+
+    &__img {
+        height: 398px;
+    }
+    &__text {
+        margin-top: 35px;
+        max-width: 230px;
+        text-align: center;
+    }
+}
+
+// Calculator section
+.calculator {
+    padding: 150px 0 200px;
+
+    &__text {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__table {
+        margin-top: 30px;
+    }
+}
+
+.table-calculator {
+    td, th{
+        height: 100px;
+    }
+    td{
+        white-space: nowrap;
+        text-align: center;
+    }
+    th{
+        min-width: 170px;
+        text-align: left;
+    }
+    th:first-child{
+        min-width: 190px;
+    }
+    tr:first-child th:nth-child(3){
+        padding: 0;
+    }
+    tr:first-child {
+        background-color: #F9E047;
+        th{
+            text-align: center;
+        }
+        
+    }
+    tr:nth-child(2n) {
+        background-color: #FFF1B1;       
+    }
+    table tr:last-child th:first-child {
+        border-bottom-left-radius: 10px;
+    }
+    
+    table tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+    table tr:first-child th:first-child {
+        border-top-left-radius: 10px;
+    }
+    
+    table tr:first-child th:last-child {
+        border-top-right-radius: 10px;
+    }
+    &__row {
+        display: flex;
+    }
+    &__increase {
+        border-collapse: collapse;
+        border: none;
+
+        td, th{
+            border: none;
+            border-collapse: collapse;
+            width:25%;
+            padding: 0 30px;
+        }
+        input{
+            width: 140px;
+            height: 50px;
+            background: #FFFFFF;
+            border: 1px solid #F9E047;
+            border-radius: 10px;
+        }
+    }
+    &__expenses {
+        margin-left: 107px;
+        border: none;
+        border-collapse: collapse;
+
+        th{
+            padding: 0 10px 0 30px;
+        }
+        th, td{
+            border: none;
+            border-collapse: collapse;
+        }
+        td{
+            padding: 0 10px;
+        }
+    }
+    &__income {
+        margin-top: 40px;
+        width: 100%;
+        border: 7px solid #fff;
+        font-size: 35px;
+        line-height: 43px;
+        text-align: center;
+
+        tr:first-child td:last-child {
+            border-top-right-radius: 10px;
+        }
+        th:first-child{
+            font-weight: 600;
+            text-transform: uppercase;
+            width: 233px;
+        }
+        td, th{
+            border: 3px solid #fff;
+        }
+    }
+}
+
+
+
+
+
+@import "media";
